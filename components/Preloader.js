@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { HeaderLogo } from '../public/assets/svgs';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);  
 
 const Preloader = ({ onLoaded }) => {
   useEffect(() => {

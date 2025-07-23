@@ -1,5 +1,9 @@
 import React from 'react';
 import Section from './Section';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);   
 
 const Pricing = () => {
   return (

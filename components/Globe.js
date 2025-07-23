@@ -1,5 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger); 
 
 const Globe = () => {
   const mountRef = useRef(null);

@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HeaderLogo } from '../public/assets/svgs';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger); 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

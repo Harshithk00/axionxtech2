@@ -1,4 +1,8 @@
 import React, { forwardRef } from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);  
 
 const Section = forwardRef(({ id, children, className = '' }, ref) => {
   return (

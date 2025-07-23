@@ -3,6 +3,9 @@ import { AxiLogoPart, NxLogoPart } from '../public/assets/svgs';
 import Globe from './Globe';
 import Section from './Section';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);  
 
 const Hero = ({ isLoaded }) => {
   useEffect(() => {
